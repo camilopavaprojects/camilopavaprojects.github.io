@@ -4,6 +4,8 @@ title: "Social Media's Impact on Mental Health"
 date: 2026-08-17
 ---
 
+I explored a synthetic dataset of 1,200 teenagers to see whether daily social media usage could predict depression risk. The headline number looked great — but digging past overall accuracy revealed the model was quietly failing at the one thing that mattered most: catching the teens actually at risk.
+
 ## Introduction
 
 Social media's effect on teen mental health is one of the most debated topics in public health right now, but hard evidence is often mixed and hard to pin down. I wanted to explore a narrower, more concrete version of that question: using behavioral and engagement data, can we predict whether a teenager is at risk of depression?
