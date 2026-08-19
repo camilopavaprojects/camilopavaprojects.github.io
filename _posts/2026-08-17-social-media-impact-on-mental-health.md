@@ -68,6 +68,10 @@ The outcome of phase I was the generation of a new clean data set 'Teen_Mental_H
 
 ## 2. Exploratory data analysis & descriptive analytics
 
+Goal: Explore relationships and validate hypotheses.
+
+Steps: Calculating summary statistics, checking column counts, computing correlation matrices, and generating plots/visualizations (heatmaps) to see how variables interact.
+
 
 
 
