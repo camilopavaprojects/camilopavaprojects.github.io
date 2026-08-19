@@ -70,9 +70,12 @@ The outcome of phase I was the generation of a new clean data set 'Teen_Mental_H
 
 Goal: Explore relationships and validate hypotheses.
 
-Steps: Calculating summary statistics, checking column counts, computing correlation matrices, and generating plots/visualizations (heatmaps) to see how variables interact.
+Steps: descriptive statistics, checking column counts, computing correlation matrices, and generating plots/visualizations (heatmaps) to see how variables interact.
 
+## 3. Statistical hypothesis testing
 
+Goal: Make predictions or mathematically prove your theories.
 
+Steps: Building machine learning models (like regression or classification algorithms) or running formal statistical tests to definitively prove your hypothesis that sleep acts as a mediating variable.
 
 
