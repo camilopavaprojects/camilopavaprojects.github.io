@@ -41,7 +41,7 @@ The dataset's 13 variables fall into four natural groups:
 
 To frame the analysis, I treated social media engagement — mainly platform usage and screen time before sleep — as the independent variables of interest, and the mental health indicators (stress, anxiety, and depression) as the outcomes I was trying to explain.
 
-## Project Roadmap (brief overview of all 5 phases)
+## Project Roadmap
 
 The project comprises five phases:
 1. Data preparation & preprocessing
@@ -49,3 +49,26 @@ The project comprises five phases:
 3. Statistical hypothesis testing
 4. Predictive modelling/machine learning
 5. Communication & design
+
+## 1. Data preparation & preprocessing
+
+I run a Extraction, Transformation and Load process that also included handling missing values, fixing typos, and encoding text variables into numbers (Ordinal and One-Hot encoding).
+
+Ordinal Encoding for [social_interaction_level]
+- Low -> 0
+- Medium --> 1
+- High --> 2
+
+One-Hot encoding for [gender]
+Instagram -> 1 Yes / 0 No
+TikTok -> 1 Yes / 0 No
+Both -> 1 Yes / 0 No
+
+The outcome of phase I was the generation of a new clean data set 'Teen_Mental_Health_Clean.csv'
+
+## 2. Exploratory data analysis & descriptive analytics
+
+
+
+
+
