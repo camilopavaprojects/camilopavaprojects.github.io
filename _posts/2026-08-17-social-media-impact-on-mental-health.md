@@ -41,4 +41,11 @@ The dataset's 13 variables fall into four natural groups:
 
 To frame the analysis, I treated social media engagement — mainly platform usage and screen time before sleep — as the independent variables of interest, and the mental health indicators (stress, anxiety, and depression) as the outcomes I was trying to explain.
 
-This post covers Phase II of the project: exploratory data analysis. It follows an initial data preparation phase, and precedes statistical hypothesis testing and predictive modeling, which I'll cover in future posts.
+## Project Roadmap (brief overview of all 5 phases)
+
+The project comprises five phases:
+1. Data preparation & preprocessing
+2. Exploratory data analysis & descriptive analytics
+3. Statistical hypothesis testing
+4. Predictive modelling/machine learning
+5. Communication & design
