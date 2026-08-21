@@ -78,4 +78,13 @@ Goal: Make predictions or mathematically prove your theories.
 
 Steps: Building machine learning models (like regression or classification algorithms) or running formal statistical tests to definitively prove your hypothesis that sleep acts as a mediating variable.
 
+I focused on `depression_label` as the target, treated lifestyle factors as covariates, and tested a specific hypothesis: does social media disrupt sleep, and does that disrupted sleep drive anxiety and depression — rather than social media affecting mental health directly?
+
+[Correlation heatmap of social media, sleep, and mental health variables]
+{: style="color: red;"}
+
+The results didn't support it. Social media hours, bedtime screen time, and sleep hours all showed essentially zero correlation with each other (r ≈ -0.01). The one real signal was a weak direct link between social media use and depression (r = 0.18) — bypassing sleep entirely.
+
+Likely explanation: this is synthetic data, and some columns appear to have been generated independently of each other. A clean null result here says more about the dataset's construction than about real teenagers — a good reminder to sanity-check synthetic data before trusting its correlations.
+
 
