@@ -72,12 +72,6 @@ Goal: Explore relationships and validate hypotheses.
 
 Steps: descriptive statistics, checking column counts, computing correlation matrices, and generating plots/visualizations (heatmaps) to see how variables interact.
 
-## 3. Statistical hypothesis testing
-
-Goal: Make predictions or mathematically prove your theories.
-
-Steps: Building machine learning models (like regression or classification algorithms) or running formal statistical tests to definitively prove your hypothesis that sleep acts as a mediating variable.
-
 I focused on `depression_label` as the target, treated lifestyle factors as covariates, and tested a specific hypothesis: does social media disrupt sleep, and does that disrupted sleep drive anxiety and depression — rather than social media affecting mental health directly?
 
 [Correlation heatmap of social media, sleep, and mental health variables]
@@ -87,4 +81,8 @@ The results didn't support it. Social media hours, bedtime screen time, and slee
 
 Likely explanation: this is synthetic data, and some columns appear to have been generated independently of each other. A clean null result here says more about the dataset's construction than about real teenagers — a good reminder to sanity-check synthetic data before trusting its correlations.
 
+## 3. Statistical hypothesis testing
 
+Goal: Make predictions or mathematically prove your theories.
+
+Steps: Building machine learning models (like regression or classification algorithms) or running formal statistical tests to definitively prove your hypothesis that sleep acts as a mediating variable.
