@@ -52,7 +52,7 @@ The project comprises five phases:
 
 ## 1. Data preparation & preprocessing
 
-I run a Extraction, Transformation and Load process that also included handling missing values, fixing typos, and encoding text variables into numbers (Ordinal and One-Hot encoding).
+I run a Extraction, Transformation and Load (ETL) process that also included handling missing values, fixing typos, and encoding text variables into numbers (Ordinal and One-Hot encoding).
 
 Ordinal Encoding for [social_interaction_level]
 - Low -> 0
