@@ -74,9 +74,6 @@ Steps: descriptive statistics, checking column counts, computing correlation mat
 
 I focused on `depression_label` as the target, treated lifestyle factors as covariates, and tested a specific hypothesis: does social media disrupt sleep, and does that disrupted sleep drive anxiety and depression — rather than social media affecting mental health directly?
 
-[Correlation heatmap of social media, sleep, and mental health variables]
-{: style="color: red;"}
-
 ![Correlation heatmap of social media, sleep, and mental health variables](/Assets/Images/HeatMapCorrelations.png)
 
 The results didn't support it. Social media hours, bedtime screen time, and sleep hours all showed essentially zero correlation with each other (r ≈ -0.01). The one real signal was a weak direct link between social media use and depression (r = 0.18) — bypassing sleep entirely.
