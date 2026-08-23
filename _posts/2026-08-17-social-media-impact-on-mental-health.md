@@ -82,6 +82,10 @@ Likely explanation: this is synthetic data, and some columns appear to have been
 
 ## 3. Statistical hypothesis testing
 
-Goal: Make predictions or mathematically prove your theories.
+Goal: Confirm whether the relationships spotted in the heatmap are statistically real, or just noise from this particular sample.
 
-Steps: Building machine learning models (like regression or classification algorithms) or running formal statistical tests to definitively prove your hypothesis that sleep acts as a mediating variable.
+Steps: Run a Spearman rank correlation test (rather than Pearson) to check the sleep–social media relationship, since the data's bimodal distribution makes a straight-line Pearson correlation unreliable. Then use an independent two-sample T-test to compare average social media hours between the depressed and non-depressed groups, since `depression_label` is categorical rather than continuous.
+
+The Spearman test confirmed Phase II's read: ρ = -0.0086, p = 0.77 — not statistically significant. Any apparent link between social media and sleep is random noise in this dataset, not a real effect.
+
+The T-test told a different story. Teens with a depression label averaged 6.72 hours of daily social media use, versus 4.48 hours for those without — a gap far too large to be chance (p < 0.0001). Whatever the mechanism, it isn't sleep: it's a direct, statistically solid relationship between social media use and depression.
