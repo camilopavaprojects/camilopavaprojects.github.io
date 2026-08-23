@@ -77,7 +77,7 @@ I focused on `depression_label` as the target, treated lifestyle factors as cova
 [Correlation heatmap of social media, sleep, and mental health variables]
 {: style="color: red;"}
 
-![Alt text description](/assets/images/HeatMapCorrelations.png)
+![Correlation heatmap of social media, sleep, and mental health variables](/Assets/images/HeatMapCorrelations.png)
 
 The results didn't support it. Social media hours, bedtime screen time, and sleep hours all showed essentially zero correlation with each other (r ≈ -0.01). The one real signal was a weak direct link between social media use and depression (r = 0.18) — bypassing sleep entirely.
 
