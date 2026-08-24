@@ -89,3 +89,17 @@ Steps: Run a Spearman rank correlation test (rather than Pearson) to check the s
 The Spearman test confirmed Phase II's read: ρ = -0.0086, p = 0.77 — not statistically significant. Any apparent link between social media and sleep is random noise in this dataset, not a real effect.
 
 The T-test told a different story. Teens with a depression label averaged 6.72 hours of daily social media use, versus 4.48 hours for those without — a gap far too large to be chance (p < 0.0001). Whatever the mechanism, it isn't sleep: it's a direct, statistically solid relationship between social media use and depression.
+
+## 4. Predictive modelling / machine learning
+
+Goal: Predict `depression_label` using the variables Phase III flagged as significant, and see how well a model actually performs.
+
+Steps: Split the data 80/20 into train and test sets, stratified so both sets kept the same ratio of depressed vs. non-depressed teens. Trained a Logistic Regression model on `daily_social_media_hours` to predict depression, then evaluated it with accuracy, a confusion matrix, and recall.
+
+First result: 97.5% accuracy. Looked great, until I checked what the model was actually doing. It had learned to predict "not depressed" for everyone. Since only 6 of 240 teens in the test set were labeled depressed, guessing "no" every time was enough to score 97.5% — while catching zero actual depression cases. Recall: 0%.
+
+That's the accuracy trap: a metric that looks strong while the model fails at the one job that mattered.
+
+I refit the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
+
+Given the context, I'd rather over-flag healthy teens than miss ones at risk — a false alarm costs a follow-up conversation, a missed case costs a lot more. This is a baseline, not a finished model; adding more variables beyond social media hours alone is the obvious next step.
