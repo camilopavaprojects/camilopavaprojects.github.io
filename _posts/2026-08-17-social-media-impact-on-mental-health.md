@@ -103,7 +103,8 @@ That's the accuracy trap: a metric that looks strong while the model fails at th
 ![Confusion Matrix: Social Media vs. Teen Depression](/Assets/Images/ConfusionMatrix_no_balanced.png)
 *Baseline model — predicts "not depressed" for everyone.*
 
-
+![Confusion matrix, class-weight balanced](/Assets/Images/ConfusionMatrix_class_weight_balanced.png)
+*After setting class_weight='balanced' — recall improves, false positives rise.*
 
 I refit the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
 
