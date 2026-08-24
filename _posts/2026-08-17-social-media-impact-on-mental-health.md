@@ -98,7 +98,9 @@ Steps: Split the data 80/20 into train and test sets, stratified so both sets ke
 
 First result: 97.5% accuracy. Looked great, until I checked what the model was actually doing. It had learned to predict "not depressed" for everyone. Since only 6 of 240 teens in the test set were labeled depressed, guessing "no" every time was enough to score 97.5% — while catching zero actual depression cases. Recall: 0%.
 
-That's the accuracy trap: a metric that looks strong while the model fails at the one job that mattered.
+That's the accuracy trap: a metric that looks strong while the model fails at the one job that mattered:
+
+
 
 I refit the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
 
