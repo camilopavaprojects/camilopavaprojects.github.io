@@ -115,14 +115,14 @@ That's the accuracy trap: a metric that looks strong while the model fails at th
 
 <p align="center">
   <img src="/Assets/Images/ConfusionMatrix_no_balanced.png" alt="Confusion Matrix: Social Media vs. Teen Depression" width="80%"><br>
-  <em>Baseline model — predicts "not depressed" for everyone.</em>
+  <em>Figure 3: Baseline model — predicts "not depressed" for everyone.</em>
 </p>
 
 I adjusted the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
 
 <p align="center">
   <img src="/Assets/Images/ConfusionMatrix_class_weight_balanced.png" alt="Confusion matrix, class-weight balanced" width="80%"><br>
-  <em>After setting class_weight='balanced' recall improves, false positives rise.</em>
+  <em>Figure 4: After setting class_weight='balanced' recall improves, false positives rise.</em>
 </p>
 
 Given the context, I'd rather over-flag healthy teens than miss ones at risk, a false alarm costs a follow-up conversation, a missed case costs a lot more. This is a baseline, not a finished model; adding more variables beyond social media hours alone is the obvious next step.
