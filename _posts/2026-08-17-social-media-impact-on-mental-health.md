@@ -4,7 +4,7 @@ title: "Social Media's Impact on Mental Health"
 date: 2026-08-17
 ---
 
-I explored a synthetic dataset of 1,200 teenagers to see whether daily social media usage could predict depression risk. The headline number looked great, but digging initial overall accuracy revealed the model was quietly failing at the one thing that mattered most: catching the teens actually at risk.
+I explored a synthetic dataset of 1,200 teenagers to see whether daily social media usage could predict depression risk. The overall accuracy looked great, but after delving into it the outcome revealed that the model was quietly failing at the one thing that mattered most: catching the teens actually at risk.
 
 ## Introduction
 
@@ -52,7 +52,7 @@ The project comprises five phases:
 
 ## 1. Data preparation & preprocessing
 
-I run a Extraction, Transformation and Load (ETL) process that also included handling missing values, fixing typos, and encoding text variables into numbers (Ordinal and One-Hot encoding).
+I ran a Extraction, Transformation and Load (ETL) process that also included handling missing values, fixing typos, and encoding text variables into numbers (Ordinal and One-Hot encoding).
 
 Ordinal Encoding for [social_interaction_level]
 - Low -> 0
@@ -74,7 +74,7 @@ Steps: descriptive statistics, checking column counts, computing correlation mat
 
 ![Distribution of daily social media hours and sleep hours](/Assets/Images/Histograms_Boxplots.png)
 
-I focused on `depression_label` as the target, treated lifestyle factors as covariates, and tested a specific hypothesis: does social media disrupt sleep, and does that disrupted sleep drive anxiety and depression — rather than social media affecting mental health directly?
+I focused on `depression_label` as the target parameter, treated lifestyle factors as covariates, and tested a specific hypothesis: does social media disrupt sleep, and does that disrupted sleep drive anxiety and depression — rather than social media affecting mental health directly?
 
 ![Correlation heatmap of social media, sleep, and mental health variables](/Assets/Images/HeatMapCorrelations.png)
 
@@ -105,9 +105,9 @@ That's the accuracy trap: a metric that looks strong while the model fails at th
 ![Confusion Matrix: Social Media vs. Teen Depression](/Assets/Images/ConfusionMatrix_no_balanced.png)
 *Baseline model — predicts "not depressed" for everyone.*
 
+I refit the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
+
 ![Confusion matrix, class-weight balanced](/Assets/Images/ConfusionMatrix_class_weight_balanced.png)
 *After setting class_weight='balanced' — recall improves, false positives rise.*
-
-I refit the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
 
 Given the context, I'd rather over-flag healthy teens than miss ones at risk — a false alarm costs a follow-up conversation, a missed case costs a lot more. This is a baseline, not a finished model; adding more variables beyond social media hours alone is the obvious next step.
