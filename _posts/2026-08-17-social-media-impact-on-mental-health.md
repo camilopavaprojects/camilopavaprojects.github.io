@@ -89,10 +89,8 @@ I focused on `depression_label` as the target parameter, treated lifestyle facto
 
 The results didn't support it. Looking at the correlation matrix in Figure 2, daily_social_media_hours, screen_time_before_sleep, and sleep hours all showed essentially zero correlation with each other (r ≈ -0.01). The one real signal was a weak direct link between social media use and depression (r = 0.18) — bypassing sleep entirely.
 
-<p align="center">
   <img src="/Assets/Images/HeatMapCorrelations.png" alt="Correlation heatmap of social media, sleep, and mental health variables" width="80%"><br>
   <em>Figure 2. Correlation matrix.</em>
-</p>
 
 Likely explanation: this is synthetic data, and some columns appear to have been generated independently of each other. A clean null result here says more about the dataset's construction than about real teenagers.
 
@@ -121,10 +119,8 @@ That's the accuracy trap: a metric that looks strong while the model fails at th
 
 I adjusted the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
 
-<p align="center">
   <img src="/Assets/Images/ConfusionMatrix_class_weight_balanced.png" alt="Confusion matrix, class-weight balanced" width="80%"><br>
   <em>Figure 4: After setting class_weight='balanced' recall improves, false positives rise.</em>
-</p>
 
 Given the context, I'd rather over-flag healthy teens than miss ones at risk, a false alarm costs a follow-up conversation, a missed case costs a lot more. This is a baseline, not a finished model; adding more variables beyond social media hours alone is the obvious next step.
 
