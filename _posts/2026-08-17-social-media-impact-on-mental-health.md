@@ -89,7 +89,10 @@ I focused on `depression_label` as the target parameter, treated lifestyle facto
 
 The results didn't support it. Looking at the correlation matrix in Figure 2, daily_social_media_hours, screen_time_before_sleep, and sleep hours all showed essentially zero correlation with each other (r ≈ -0.01). The one real signal was a weak direct link between social media use and depression (r = 0.18) — bypassing sleep entirely.
 
-![Correlation heatmap of social media, sleep, and mental health variables](/Assets/Images/HeatMapCorrelations.png)
+<p align="center">
+  <img src="/Assets/Images/HeatMapCorrelations.png" alt="Correlation heatmap of social media, sleep, and mental health variables" width="90%"><br>
+  <em>Figure 2. Correlation matrix.</em>
+</p>
 
 Likely explanation: this is synthetic data, and some columns appear to have been generated independently of each other. A clean null result here says more about the dataset's construction than about real teenagers.
 
