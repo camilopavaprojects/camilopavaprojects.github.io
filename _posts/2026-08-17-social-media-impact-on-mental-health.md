@@ -72,6 +72,8 @@ Goal: Explore relationships and validate hypotheses.
 
 Steps: descriptive statistics, checking column counts, computing correlation matrices, and generating plots/visualizations (heatmaps) to see how variables interact.
 
+![Distribution of daily social media hours and sleep hours](/Assets/Images/Histograms_Boxplots.png)
+
 I focused on `depression_label` as the target, treated lifestyle factors as covariates, and tested a specific hypothesis: does social media disrupt sleep, and does that disrupted sleep drive anxiety and depression — rather than social media affecting mental health directly?
 
 ![Correlation heatmap of social media, sleep, and mental health variables](/Assets/Images/HeatMapCorrelations.png)
