@@ -111,3 +111,11 @@ I refit the model with `class_weight='balanced'`, which penalizes the model for 
 *After setting class_weight='balanced' — recall improves, false positives rise.*
 
 Given the context, I'd rather over-flag healthy teens than miss ones at risk — a false alarm costs a follow-up conversation, a missed case costs a lot more. This is a baseline, not a finished model; adding more variables beyond social media hours alone is the obvious next step.
+
+## Conclusion
+
+This project set out to answer a simple question — can social media habits predict teen depression risk — and ended up teaching a bigger lesson than the answer itself. Sleep didn't turn out to be the hidden link I expected. Social media use did show a real, statistically significant relationship with depression. And the model built on that relationship looked excellent by one metric while being nearly useless by the metric that actually mattered.
+
+That gap between "the model looks good" and "the model does its job" is the core takeaway. It's also the reason Phase III (hypothesis testing) and Phase IV (evaluation beyond accuracy) exist as distinct steps rather than shortcuts to skip.
+
+This was a first pass, built on a single variable and a synthetic dataset. The natural next step is bringing in more predictors — sleep, stress, anxiety, physical activity — and testing whether a richer model can catch more at-risk teens without the trade-off getting worse.
