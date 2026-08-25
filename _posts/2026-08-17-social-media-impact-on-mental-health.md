@@ -90,7 +90,7 @@ I focused on `depression_label` as the target parameter, treated lifestyle facto
 The results didn't support it. Looking at the correlation matrix in Figure 2, daily_social_media_hours, screen_time_before_sleep, and sleep hours all showed essentially zero correlation with each other (r ≈ -0.01). The one real signal was a weak direct link between social media use and depression (r = 0.18) — bypassing sleep entirely.
 
 <p align="center">
-  <img src="/Assets/Images/HeatMapCorrelations.png" alt="Correlation heatmap of social media, sleep, and mental health variables" width="90%"><br>
+  <img src="/Assets/Images/HeatMapCorrelations.png" alt="Correlation heatmap of social media, sleep, and mental health variables" width="80%"><br>
   <em>Figure 2. Correlation matrix.</em>
 </p>
 
@@ -116,10 +116,8 @@ First result: 97.5% accuracy. Looked great, until I checked what the model was a
 
 That's the accuracy trap: a metric that looks strong while the model fails at the one job that mattered:
 
-<p align="center">
   <img src="/Assets/Images/ConfusionMatrix_no_balanced.png" alt="Confusion Matrix: Social Media vs. Teen Depression" width="80%"><br>
   <em>Figure 3: Baseline model — predicts "not depressed" for everyone.</em>
-</p>
 
 I adjusted the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
 
