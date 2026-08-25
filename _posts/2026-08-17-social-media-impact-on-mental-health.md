@@ -54,15 +54,21 @@ The project comprises five phases:
 
 I ran a Extraction, Transformation and Load (ETL) process that also included handling missing values, fixing typos, and encoding text variables into numbers (Ordinal and One-Hot encoding).
 
-Ordinal Encoding for [social_interaction_level]
-- Low -> 0
-- Medium --> 1
-- High --> 2
+**Ordinal Encoding for `[social_interaction_level]`**
 
-One-Hot encoding for [gender]
-Instagram -> 1 Yes / 0 No
-TikTok -> 1 Yes / 0 No
-Both -> 1 Yes / 0 No
+| Interaction Level | Encoded Value |
+|---|:---:|
+| Low | 0 |
+| Medium | 1 |
+| High | 2 |
+
+**One-Hot Encoding for `[platform_usage]`**
+
+| Original Category | `is_Instagram` | `is_TikTok` | `is_Both` |
+|---|:---:|:---:|:---:|
+| Instagram | 1 | 0 | 0 |
+| TikTok | 0 | 1 | 0 |
+| Both | 0 | 0 | 1 |
 
 The outcome of phase 1 was the generation of a new clean data set 'Teen_Mental_Health_Clean.csv'
 
