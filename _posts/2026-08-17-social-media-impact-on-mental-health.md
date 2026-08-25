@@ -111,7 +111,7 @@ I refit the model with `class_weight='balanced'`, which penalizes the model for 
 
 <p align="center">
   <img src="/Assets/Images/ConfusionMatrix_class_weight_balanced.png" alt="Confusion matrix, class-weight balanced" width="80%"><br>
-  <em>After setting class_weight='balanced' — recall improves, false positives rise.</em>
+  <em>After setting class_weight='balanced' recall improves, false positives rise.</em>
 </p>
 
 Given the context, I'd rather over-flag healthy teens than miss ones at risk, a false alarm costs a follow-up conversation, a missed case costs a lot more. This is a baseline, not a finished model; adding more variables beyond social media hours alone is the obvious next step.
