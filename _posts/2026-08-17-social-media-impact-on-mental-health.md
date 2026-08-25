@@ -80,7 +80,10 @@ Steps: descriptive statistics, checking column counts, computing correlation mat
 
 Figure 1 displays the distributions of daily_social_media_hours and sleep_hours. It reveals a non-bell shape distribution.
 
-![Distribution of daily social media hours and sleep hours](/Assets/Images/Histograms_Boxplots.png)
+<figure align="center">
+  <img src="/Assets/Images/Histograms_Boxplots.png" alt="Distribution of daily social media hours and sleep hours" width="100%">
+  <figcaption><em>Figure 1: Distributions of daily social media hours and sleep hours (histograms and boxplots).</em></figcaption>
+</figure>
 
 I focused on `depression_label` as the target parameter, treated lifestyle factors as covariates, and tested a specific hypothesis: does social media disrupt sleep, and does that disrupted sleep drive anxiety and depression, rather than social media affecting mental health directly?
 
@@ -115,7 +118,7 @@ That's the accuracy trap: a metric that looks strong while the model fails at th
   <em>Baseline model — predicts "not depressed" for everyone.</em>
 </p>
 
-I refit the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
+I adjusted the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
 
 <p align="center">
   <img src="/Assets/Images/ConfusionMatrix_class_weight_balanced.png" alt="Confusion matrix, class-weight balanced" width="80%"><br>
