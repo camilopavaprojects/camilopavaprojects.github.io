@@ -10,9 +10,9 @@ I explored a synthetic dataset of 1,200 teenagers to see whether daily social me
 
 Social media's effect on teen mental health is one of the most debated topics in public health right now, but factual evidence is often mixed and hard to pin down. I wanted to explore a narrower, more concrete version of that question: using behavioral and engagement data, can we predict whether a teenager is at risk of depression?
 
-To this end, I used a synthetic dataset from Kaggle: [Social Media Impact on Mental Health](https://www.kaggle.com/datasets/sunil123kumar/social-media-impact-on-mental-health). It reports 1,200 teenagers across 13 variables, with `depression_label` as the target variable. Because the data is synthetic, it's a safe choice for exploring these dynamics without the ethical and privacy issues that come with real teen mental health data — but it also means the patterns reflect how the dataset was generated, not necessarily real-world behavior. More on that in the caveats below.
+To this end, I used a synthetic dataset from Kaggle: [Social Media Impact on Mental Health](https://www.kaggle.com/datasets/sunil123kumar/social-media-impact-on-mental-health). It reports 1,200 teenagers across 13 variables, with `depression_label` as the target variable. Because the data is synthetic, it's a safe choice for exploring these dynamics without the ethical and privacy issues that come with real patient (mental) health data. It also means the patterns reflect how the dataset was generated, not necessarily real-world behavior. More on that in the caveats below.
 
-What I found challenged my first read of the results: a model can display strong overall accuracy while still missing most of the actual depression cases — the exact group you'd most want to catch.
+What I found challenged my first read of the results: a model can display strong overall accuracy while still missing most of the actual depression cases, the very group you would care the most.
 
 ## The Data
 
@@ -39,7 +39,7 @@ The dataset's 13 variables fall into four natural groups:
 - Addiction level
 - Depression level (the target variable, `depression_label`)
 
-To frame the analysis, I treated social media engagement — mainly platform usage and screen time before sleep — as the independent variables of interest, and the mental health indicators (stress, anxiety, and depression) as the outcomes I was trying to explain.
+To frame the analysis, I treated social media engagement, mainly platform usage and screen time before sleep, as the independent variables of interest, and the mental health indicators (stress, anxiety, and depression) as the outcomes I was trying to explain.
 
 ## Project Roadmap
 
@@ -64,7 +64,7 @@ Instagram -> 1 Yes / 0 No
 TikTok -> 1 Yes / 0 No
 Both -> 1 Yes / 0 No
 
-The outcome of phase I was the generation of a new clean data set 'Teen_Mental_Health_Clean.csv'
+The outcome of phase 1 was the generation of a new clean data set 'Teen_Mental_Health_Clean.csv'
 
 ## 2. Exploratory data analysis & descriptive analytics
 
@@ -74,13 +74,13 @@ Steps: descriptive statistics, checking column counts, computing correlation mat
 
 ![Distribution of daily social media hours and sleep hours](/Assets/Images/Histograms_Boxplots.png)
 
-I focused on `depression_label` as the target parameter, treated lifestyle factors as covariates, and tested a specific hypothesis: does social media disrupt sleep, and does that disrupted sleep drive anxiety and depression — rather than social media affecting mental health directly?
-
-![Correlation heatmap of social media, sleep, and mental health variables](/Assets/Images/HeatMapCorrelations.png)
+I focused on `depression_label` as the target parameter, treated lifestyle factors as covariates, and tested a specific hypothesis: does social media disrupt sleep, and does that disrupted sleep drive anxiety and depression, rather than social media affecting mental health directly?
 
 The results didn't support it. Social media hours, bedtime screen time, and sleep hours all showed essentially zero correlation with each other (r ≈ -0.01). The one real signal was a weak direct link between social media use and depression (r = 0.18) — bypassing sleep entirely.
 
-Likely explanation: this is synthetic data, and some columns appear to have been generated independently of each other. A clean null result here says more about the dataset's construction than about real teenagers — a good reminder to sanity-check synthetic data before trusting its correlations.
+![Correlation heatmap of social media, sleep, and mental health variables](/Assets/Images/HeatMapCorrelations.png)
+
+Likely explanation: this is synthetic data, and some columns appear to have been generated independently of each other. A clean null result here says more about the dataset's construction than about real teenagers.
 
 ## 3. Statistical hypothesis testing
 
@@ -88,7 +88,7 @@ Goal: Confirm whether the relationships spotted in the heatmap are statistically
 
 Steps: Run a Spearman rank correlation test (rather than Pearson) to check the sleep–social media relationship, since the data's bimodal distribution makes a straight-line Pearson correlation unreliable. Then use an independent two-sample T-test to compare average social media hours between the depressed and non-depressed groups, since `depression_label` is categorical rather than continuous.
 
-The Spearman test confirmed Phase II's read: ρ = -0.0086, p = 0.77 — not statistically significant. Any apparent link between social media and sleep is random noise in this dataset, not a real effect.
+The Spearman test confirmed Phase 2's read: ρ = -0.0086, p = 0.77 which not statistically significant. Any apparent link between social media and sleep is random noise in this dataset, not a real effect.
 
 The T-test told a different story. Teens with a depression label averaged 6.72 hours of daily social media use, versus 4.48 hours for those without — a gap far too large to be chance (p < 0.0001). Whatever the mechanism, it isn't sleep: it's a direct, statistically solid relationship between social media use and depression.
 
@@ -98,19 +98,21 @@ Goal: Predict `depression_label` using the variables Phase III flagged as signif
 
 Steps: Split the data 80/20 into train and test sets, stratified so both sets kept the same ratio of depressed vs. non-depressed teens. Trained a Logistic Regression model on `daily_social_media_hours` to predict depression, then evaluated it with accuracy, a confusion matrix, and recall.
 
-First result: 97.5% accuracy. Looked great, until I checked what the model was actually doing. It had learned to predict "not depressed" for everyone. Since only 6 of 240 teens in the test set were labeled depressed, guessing "no" every time was enough to score 97.5% — while catching zero actual depression cases. Recall: 0%.
+First result: 97.5% accuracy. Looked great, until I checked what the model was actually doing. It had learned to predict "not depressed" for everyone. Since only 6 of 240 teens in the test set were labeled depressed, guessing "no" every time was enough to score 97.5% while catching zero actual depression cases i.e. Recall: 0%.
 
 That's the accuracy trap: a metric that looks strong while the model fails at the one job that mattered:
 
-<img src="/Assets/Images/ConfusionMatrix_no_balanced.png" alt="Confusion Matrix: Social Media vs. Teen Depression" width="80%"><br>
-*Baseline model — predicts "not depressed" for everyone.*
+<p align="center">
+  <img src="/Assets/Images/ConfusionMatrix_no_balanced.png" alt="Confusion Matrix: Social Media vs. Teen Depression" width="80%"><br>
+  <em>Baseline model — predicts "not depressed" for everyone.</em>
+</p>
 
 I refit the model with `class_weight='balanced'`, which penalizes the model for missing the minority class. Recall jumped to 66.7% (4 of 6 caught), but accuracy dropped to 74.6%, with 59 false alarms along the way. Classic precision-recall trade-off.
 
 ![Confusion matrix, class-weight balanced](/Assets/Images/ConfusionMatrix_class_weight_balanced.png)
 *After setting class_weight='balanced' — recall improves, false positives rise.*
 
-Given the context, I'd rather over-flag healthy teens than miss ones at risk — a false alarm costs a follow-up conversation, a missed case costs a lot more. This is a baseline, not a finished model; adding more variables beyond social media hours alone is the obvious next step.
+Given the context, I'd rather over-flag healthy teens than miss ones at risk, a false alarm costs a follow-up conversation, a missed case costs a lot more. This is a baseline, not a finished model; adding more variables beyond social media hours alone is the obvious next step.
 
 ## Conclusion
 
