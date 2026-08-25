@@ -23,12 +23,12 @@ The dataset's 13 variables fall into four natural groups:
 - Gender
 
 **Social media behavior**
-- Daily social media hours
+- daily_social_media_hours
 - Platform usage
 - Screen time before sleep
 
 **Lifestyle factors**
-- Sleep hours
+- sleep_hours
 - Academic performance
 - Physical activity
 - Social interaction level
@@ -77,6 +77,8 @@ The outcome of phase 1 was the generation of a new clean data set 'Teen_Mental_H
 Goal: Explore relationships and validate hypotheses.
 
 Steps: descriptive statistics, checking column counts, computing correlation matrices, and generating plots/visualizations (heatmaps) to see how variables interact.
+
+Figure 1 displays the distributions of daily_social_media_hours and sleep_hours reveal
 
 ![Distribution of daily social media hours and sleep hours](/Assets/Images/Histograms_Boxplots.png)
 
