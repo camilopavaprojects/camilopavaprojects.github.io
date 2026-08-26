@@ -58,7 +58,7 @@ The project comprises five phases:
 
 ## 1. Data preparation & preprocessing
 
-I ran a Extraction, Transformation and Load (ETL) process that also included handling missing values, fixing typos, and encoding text variables into numbers (Ordinal and One-Hot encoding).
+I ran an Extraction, Transformation and Load (ETL) process that also included handling missing values, fixing typos, and encoding text variables into numbers (Ordinal and One-Hot encoding).
 
 **Ordinal Encoding for `[social_interaction_level]`**
 
@@ -118,7 +118,7 @@ The T-test told a different story. Teens with a depression label averaged 6.72 h
 
 **T-Test Results**
 
-| Test Pair | Avg SM Hours (No Depression) | Avg SM Hours (Depression) | Statistic (t) | p-value |
+| Test Pair | Avg SM Hours (No Depression) | Avg SM Hours (Depression) | Statistic (t-stat) | p-value |
 |---|:---:|:---:|:---:|:---:|
 | Social Media vs. Depression | 4.48 | 6.72 | -6.1593 | 0.0000 |
 
@@ -156,4 +156,4 @@ This project set out to answer a simple question: can social media habits predic
 
 That gap between "the model looks good" and "the model does its job" is the core takeaway. It's also the reason Phase III (hypothesis testing) and Phase IV (evaluation beyond accuracy) exist as distinct steps rather than shortcuts to skip.
 
-This was a first pass, built on a single variable and a synthetic dataset. The natural next step is bringing in more predictors — sleep, stress, anxiety, physical activity — and testing whether a richer model can catch more at-risk teens without the trade-off getting worse.
+This was a first pass, built on a single variable and a synthetic dataset. The natural next step is bringing in more predictors like sleep, stress, anxiety, physical activity, and testing whether a richer model can catch more at-risk teens without the trade-off getting worse.
