@@ -14,7 +14,7 @@ To this end, I used a synthetic dataset from Kaggle: [Social Media Impact on Men
 
 What I found challenged my first read of the results: a model can display strong overall accuracy while still missing most of the actual depression cases, the very group you would care the most.
 
-*The raw Python scripts for this project are available on GitHub:*
+*The raw Python scripts for this project are available on GitHub's repository:*
 * [Phase 1: Data preparation & preprocessing](https://github.com/camilopavaprojects/camilopavaprojects.github.io/blob/main/_posts/Scripts/Social_Media_Impact_Mental_Health/Phase1.py)
 * [Phase 2: Exploratory data analysis](https://github.com/camilopavaprojects/camilopavaprojects.github.io/blob/main/_posts/Scripts/Social_Media_Impact_Mental_Health/Phase2.py)
 * [Phase 3: Statistical hypothesis testing](https://github.com/camilopavaprojects/camilopavaprojects.github.io/blob/main/_posts/Scripts/Social_Media_Impact_Mental_Health/Phase3.py)
