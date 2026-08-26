@@ -118,7 +118,7 @@ The T-test told a different story. Teens with a depression label averaged 6.72 h
 
 **T-Test Results**
 
-| Test Pair | Avg SM Hours (No Depression) | Avg SM Hours (Depression) | Statistic ($t$) | p-value |
+| Test Pair | Avg SM Hours (No Depression) | Avg SM Hours (Depression) | Statistic (t) | p-value |
 |---|:---:|:---:|:---:|:---:|
 | Social Media vs. Depression | 4.48 | 6.72 | -6.1593 | 0.0000 |
 
