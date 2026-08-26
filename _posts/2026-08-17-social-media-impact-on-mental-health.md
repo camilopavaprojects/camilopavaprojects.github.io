@@ -120,8 +120,8 @@ First result: 97.5% accuracy. Looked great, until I checked what the model was a
 
 That's the accuracy trap: a metric that looks strong while the model fails at the one job that mattered:
 
-  <figure style="text-align: center;">
-  <img src="/Assets/Images/ConfusionMatrix_no_balanced.png" alt="Confusion Matrix: Social Media vs. Teen Depression" width="70%">
+ <figure>
+  <img src="/Assets/Images/ConfusionMatrix_no_balanced.png" alt="Confusion Matrix: Social Media vs. Teen Depression" width="70%" style="display: block; margin: 0 auto;">
   <figcaption style="text-align: left;">
     <em>Figure 3: Baseline model — predicts "not depressed" for everyone.</em>
   </figcaption>
