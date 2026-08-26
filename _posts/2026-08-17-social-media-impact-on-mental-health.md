@@ -110,11 +110,17 @@ The Spearman test confirmed Phase 2's read: any apparent link between social med
 
 **Spearman Correlation Results**
 
-| Test Pair | Statistic ($\rho$) | p-value |
+| Test Pair | Statistic | p-value |
 |---|:---:|:---:|
 | Social Media vs. Sleep | -0.0086 | 0.7655 |
 
 The T-test told a different story. Teens with a depression label averaged 6.72 hours of daily social media use, versus 4.48 hours for those without — a gap far too large to be chance (p < 0.0001). Whatever the mechanism, it isn't sleep: it's a direct, statistically solid relationship between social media use and depression.
+
+**T-Test Results**
+
+| Test Pair | Avg SM Hours (No Depression) | Avg SM Hours (Depression) | Statistic ($t$) | p-value |
+|---|:---:|:---:|:---:|:---:|
+| Social Media vs. Depression | 4.48 | 6.72 | -6.1593 | 0.0000 |
 
 ## 4. Predictive modelling / machine learning
 
