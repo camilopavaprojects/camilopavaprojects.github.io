@@ -20,7 +20,7 @@ What I found challenged my first read of the results: a model can display strong
 * [Phase 3: Statistical hypothesis testing](https://github.com/camilopavaprojects/camilopavaprojects.github.io/blob/main/_posts/Scripts/Social_Media_Impact_Mental_Health/Phase3.py)
 * [Phase 4: Predictive modelling](https://github.com/camilopavaprojects/camilopavaprojects.github.io/blob/main/_posts/Scripts/Social_Media_Impact_Mental_Health/Phase4.py)
 
-## The Data
+## The data
 
 The dataset's 13 variables fall into four natural groups:
 
@@ -47,7 +47,7 @@ The dataset's 13 variables fall into four natural groups:
 
 To frame the analysis, I treated social media engagement, mainly platform usage and screen time before sleep, as the independent variables of interest, and the mental health indicators (stress, anxiety, and depression) as the outcomes I was trying to explain.
 
-## Project Roadmap
+## Project roadmap
 
 The project comprises five phases:
 1. Data preparation & preprocessing
