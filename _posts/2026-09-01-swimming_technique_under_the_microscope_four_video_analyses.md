@@ -24,14 +24,12 @@ This collection covers some of the swimming biomechanics projects I worked on ba
 
 Colombian Olympic swimmer, [14th at Rio 2016](https://www.elnuevosiglo.com.co/rio-2016-jorge-murillo-tuvo-una-buena-actuacion-en-la-natacion) Olympic games in 100m breaststroke.
 
-Colombian Olympic swimmer, 14th at Rio 2016 Olympic games in 100m breaststroke.
-
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/iCq4hbvs12w"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     frameborder="0" allowfullscreen></iframe>
 </div>
-
+--
 
 - [Leonidas Romero](https://www.wikiwand.com/en/Finswimming_at_the_2013_World_Games) (sagittal + frontal)
 
