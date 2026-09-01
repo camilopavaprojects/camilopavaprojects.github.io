@@ -6,6 +6,8 @@ date: 2026-09-01
 
 ## Why this collection exists
 
+My passion for swimming started when I was 7. That early drive turned into curiosity about what actually made the best swimmers fastest, specially how the body should move through water. This was roughly 20 to 25 years ago, when filming outside of the water was feasible but underwater recording wasn't, at least not with the resources I had access to. That curiosity about human movement eventually led me to study bioengineering, where I spent time on biomechanics coursework and a few research projects.
+
 ## The reasoning and theory behind it
 
 ## Goals of the analysis
