@@ -29,12 +29,12 @@ The dataset's 13 variables fall into four natural groups:
 - Gender
 
 **Social media behavior**
-- daily_social_media_hours
+- Daily social media hours
 - Platform usage
 - Screen time before sleep
 
 **Lifestyle factors**
-- sleep_hours
+- Sleep hours
 - Academic performance
 - Physical activity
 - Social interaction level
@@ -44,6 +44,15 @@ The dataset's 13 variables fall into four natural groups:
 - Anxiety level
 - Addiction level
 - Depression level (the target variable, `depression_label`)
+
+For readers following along with the code, here's how these map to the actual column names in the dataset:
+
+| Plain name | Column name |
+|---|---|
+| Daily social media hours | `daily_social_media_hours` |
+| Screen time before sleep | `screen_time_before_sleep` |
+| Sleep hours | `sleep_hours` |
+| Depression level | `depression_label` |
 
 To frame the analysis, I treated social media engagement, mainly platform usage and screen time before sleep, as the independent variables of interest, and the mental health indicators (stress, anxiety, and depression) as the outcomes I was trying to explain.
 
