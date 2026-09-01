@@ -55,8 +55,6 @@ Attempt to combine all three views in a single analysis, done with very limited 
 
 - [Leonidas Romero](https://www.wikiwand.com/en/Finswimming_at_the_2013_World_Games) (sagittal + frontal)
 
-Monofin world medallist at 2013 World Games. 3D head path of the dive off the blocks (sagittal + frontal + transverse)
-
 A follow-up on Romero: attempting to reconstruct a 3D head-path trajectory during the start, by combining multiple views.
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
