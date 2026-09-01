@@ -20,7 +20,9 @@ This collection covers some of the swimming biomechanics projects I worked on ba
 
 ## The videos
 
-- Jorge "La Trucha" Murillo (sagittal view)
+- [Jorge "La Trucha" Murillo](https://en.wikipedia.org/wiki/Jorge_Murillo) (sagittal view)
+
+Colombian Olympic swimmer, [14th at Rio 2016](https://www.elnuevosiglo.com.co/rio-2016-jorge-murillo-tuvo-una-buena-actuacion-en-la-natacion) Olympic games in 100m breaststroke.
 
 Colombian Olympic swimmer, 14th at Rio 2016 Olympic games in 100m breaststroke.
 
@@ -31,7 +33,7 @@ Colombian Olympic swimmer, 14th at Rio 2016 Olympic games in 100m breaststroke.
 </div>
 
 
-- Leonidas Romero (sagittal + frontal)
+- [Leonidas Romero](https://www.wikiwand.com/en/Finswimming_at_the_2013_World_Games) (sagittal + frontal)
 
 Monofin world medallist at 2013 World Games.
 
