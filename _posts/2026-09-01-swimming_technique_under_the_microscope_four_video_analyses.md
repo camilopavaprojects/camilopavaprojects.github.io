@@ -14,9 +14,9 @@ This collection covers some of the swimming biomechanics projects I worked on ba
 
 ## Goals of the analysis
 
-Benchmarking technique against efficient models
-Spotting specific inefficiencies (head movement, entry angles, catch position, etc.)
-Personal/skill-building goal: learning analytical rigor with constrained tools
+- Benchmarking technique against efficient models
+- Spotting specific inefficiencies (head movement, entry angles, catch position, etc.)
+- Personal/skill-building goal: learning analytical rigor with constrained tools
 
 ## The videos
 
