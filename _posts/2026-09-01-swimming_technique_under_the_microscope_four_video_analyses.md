@@ -29,7 +29,7 @@ Colombian Olympic swimmer, [14th at Rio 2016](https://www.elnuevosiglo.com.co/ri
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     frameborder="0" allowfullscreen></iframe>
 </div>
---
+<br>
 
 - [Leonidas Romero](https://www.wikiwand.com/en/Finswimming_at_the_2013_World_Games) (sagittal + frontal)
 
@@ -40,7 +40,7 @@ Monofin world medallist at 2013 World Games.
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     frameborder="0" allowfullscreen></iframe>
 </div>
-
+<br>
 
 - Dive off the block: analysis for a regional swimming team (sagittal + frontal + transverse views)
 
@@ -51,7 +51,7 @@ Attempt to combine all three views in a single analysis, done with very limited 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     frameborder="0" allowfullscreen></iframe>
 </div>
-
+<br>
 
 - [Leonidas Romero](https://www.wikiwand.com/en/Finswimming_at_the_2013_World_Games) (sagittal + frontal)
 
