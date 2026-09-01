@@ -20,11 +20,19 @@ This collection covers some of the swimming biomechanics projects I worked on ba
 
 ## The videos
 
+- Jorge "La Trucha" Murillo (sagittal view)
+
+Colombian Olympic swimmer, 14th at Rio 2016 Olympic games in 100m breaststroke.
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/iCq4hbvs12w"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     frameborder="0" allowfullscreen></iframe>
 </div>
+
+- Leonidas Romero (sagittal + frontal)
+
+Monofin world medallist at 2013 World Games.
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/uuj_lCmC6tA"
@@ -32,11 +40,19 @@ This collection covers some of the swimming biomechanics projects I worked on ba
     frameborder="0" allowfullscreen></iframe>
 </div>
 
+- Dive off the block: analysis for a regional swimming team (sagittal + frontal + transverse views)
+
+Attempt to combine all three views in a single analysis, done with very limited resources.
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/eqmYvgL9PVY"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     frameborder="0" allowfullscreen></iframe>
 </div>
+
+- Leonidas Romero, 3D head path of the dive off the blocks (sagittal + frontal + transverse)
+
+A follow-up on Romero: attempting to reconstruct a 3D head-path trajectory during the start, by combining multiple 2D views.
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/ZKyxqmbu1X4"
