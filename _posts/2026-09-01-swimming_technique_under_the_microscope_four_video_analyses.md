@@ -30,6 +30,7 @@ Colombian Olympic swimmer, 14th at Rio 2016 Olympic games in 100m breaststroke.
     frameborder="0" allowfullscreen></iframe>
 </div>
 
+
 - Leonidas Romero (sagittal + frontal)
 
 Monofin world medallist at 2013 World Games.
@@ -40,6 +41,7 @@ Monofin world medallist at 2013 World Games.
     frameborder="0" allowfullscreen></iframe>
 </div>
 
+
 - Dive off the block: analysis for a regional swimming team (sagittal + frontal + transverse views)
 
 Attempt to combine all three views in a single analysis, done with very limited resources.
@@ -49,6 +51,7 @@ Attempt to combine all three views in a single analysis, done with very limited 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     frameborder="0" allowfullscreen></iframe>
 </div>
+
 
 - Leonidas Romero, 3D head path of the dive off the blocks (sagittal + frontal + transverse)
 
