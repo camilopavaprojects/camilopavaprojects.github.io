@@ -10,7 +10,13 @@ My passion for swimming started when I was 7. That early drive turned into curio
 
 ## The reasoning and theory behind it
 
+This collection covers some of the swimming biomechanics projects I worked on back then in Medellín, Colombia. Most relied on the sagittal view, the easiest to capture with the equipment and setup available at the time; frontal and transverse views were rarely captured. Key body points such as hip trajectory, head position and trajectory and thigh angle give concrete insight into technical proficiency and hydrodynamic efficiency. Ultimately, all of them point towards the same goal: reducing drag.
+
 ## Goals of the analysis
+
+Benchmarking technique against efficient models
+Spotting specific inefficiencies (head movement, entry angles, catch position, etc.)
+Personal/skill-building goal: learning analytical rigor with constrained tools
 
 ## The videos
 
