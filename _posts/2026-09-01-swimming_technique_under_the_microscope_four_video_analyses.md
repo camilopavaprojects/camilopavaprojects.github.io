@@ -24,6 +24,10 @@ This collection covers some of the swimming biomechanics projects I worked on ba
 
 Colombian Olympic swimmer, [14th at Rio 2016](https://www.elnuevosiglo.com.co/rio-2016-jorge-murillo-tuvo-una-buena-actuacion-en-la-natacion) Olympic games in 100m breaststroke.
 
+This project tracked the trajectory of the hip, the anatomical landmark closest to the body's center of mass. From a physics standpoint, the most efficient way to travel from point A to point B is in a straight line, which minimizes both the distance covered and the energy spent. In swimming, this means keeping the body as horizontal and streamlined as possible to reduce drag, so the hip trajectory should resemble a horizontal line with minimal vertical oscillation.
+
+This analysis shows the value of measuring this parameter and sharing it with the athlete and coach so they can refine technique. A couple of weeks later, the same measurement was repeated and the resulting curve had changed markedly.
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/iCq4hbvs12w"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
