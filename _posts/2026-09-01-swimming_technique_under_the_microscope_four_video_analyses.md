@@ -16,7 +16,7 @@ This collection covers some of the swimming biomechanics projects I worked on ba
 
 - Benchmarking technique against efficient models
 - Spotting specific inefficiencies (head movement, entry angles, catch position, etc.)
-- Personal/skill-building goal: learning analytical rigor with constrained tools
+- Personal/skill-building goal: learning analytical rigor under constrained conditions and using limited tools
 
 ## The videos
 
